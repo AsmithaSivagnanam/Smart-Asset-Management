@@ -1,0 +1,21 @@
+{
+  "name": "trustmesh-backend",
+  "version": "1.0.0",
+  "description": "Node.js and Express backend for TrustMesh decentralized identity and asset access control.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test:db": "node test_db.js"
+  },
+  "dependencies": {
+    "@datastax/astra-db-ts": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "joi": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "latest"
+  }
+}
