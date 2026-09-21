@@ -1,5 +1,6 @@
-const API_BASE_URL = 'http://localhost:3001/api';
-const SERVER_BASE_URL = 'http://localhost:3001';
+const backendBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_BASE_URL = `${backendBaseUrl}/api`;
+const SERVER_BASE_URL = backendBaseUrl;
 
 async function parseResponse(response) {
   const data = await response.json();
